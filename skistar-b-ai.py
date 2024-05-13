@@ -1,6 +1,9 @@
 import streamlit as st
 import openai
 from openai import OpenAI, AssistantEventHandler
+import sys
+st.write(sys.executable)
+st.write(sys.path)
 
 # Initialize the OpenAI client with your API key
 client = OpenAI(api_key=st.secrets["openai_api_key"])
