@@ -1,4 +1,5 @@
 import streamlit as st
+import openai
 from openai import OpenAI, AssistantEventHandler
 
 # Initialize the OpenAI client with your API key
