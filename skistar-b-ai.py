@@ -2,7 +2,7 @@ import streamlit as st
 from openai import OpenAI, AssistantEventHandler
 
 # Initialize the OpenAI client with your API key
-client = OpenAI(api_key="YOUR_OPENAI_API_KEY")  # Replace with your actual API key
+client = OpenAI(api_key=st.secrets["openai_api_key"])
 
 # App title
 st.title('POC - Skistar Boende AI')
